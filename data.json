@@ -1,0 +1,14 @@
+[
+    {
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "molecule": "Calcium",
+        "concentration": 30
+    },
+    {
+        "lat": 43.6045,
+        "lon": 1.444,
+        "molecule": "Magnesium",
+        "concentration": 50
+    }
+]
