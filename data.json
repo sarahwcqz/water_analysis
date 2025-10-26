@@ -1,14 +1,30 @@
-[
-    {
-        "lat": 48.8566,
-        "lon": 2.3522,
-        "molecule": "Calcium",
-        "concentration": 30
-    },
-    {
-        "lat": 43.6045,
-        "lon": 1.444,
-        "molecule": "Magnesium",
-        "concentration": 50
-    }
-]
+{
+    "Lille": [
+        {
+            "lat": 50.6244,
+            "lon": 3.0679,
+            "molecule": "Calcium",
+            "concentration": 30
+        },
+        {
+            "lat": 50.6244,
+            "lon": 3.0679,
+            "molecule": "Magnesium",
+            "concentration": 70
+        }
+    ],
+    "Soissons": [
+        {
+            "lat": 49.3770,
+            "lon": 3.3286,
+            "molecule": "Calcium",
+            "concentration": 50
+        },
+        {
+            "lat": 49.3700,
+            "lon": 3.3286,
+            "molecule": "Magnesium",
+            "concentration": 50
+        }
+    ]
+}

@@ -12,18 +12,23 @@ def index():
 # ---------------------------- selected mol --------------------------- #
 @app.route('/data')
 def get_data_filtered():
-    mol_list = request.args.getlist('molecule')  # liste de molécules cochées
-    mol_list = [m.lower() for m in mol_list]    # met tout en lower_case
+    mol_list = request.args.getlist('molecule')
+    mol_list = [m.lower() for m in mol_list]
 
     with open('data.json', 'r') as f:
         data = json.load(f)
 
+    # filtrage par molécule
     if mol_list:
-        data = [p for p in data if p['molecule'].lower() in mol_list]
-        # list comprehension : ajoute p, pour chaque p de data qui remplit la condition:
-        # fait parti de la liste cochee
+        filtered = {}
+        for city, points in data.items():
+            filtered_points = [p for p in points if p['molecule'].lower() in mol_list]
+            if filtered_points:
+                filtered[city] = filtered_points
+        return jsonify(filtered)
 
     return jsonify(data)
+
 
 
 if __name__ == '__main__':
