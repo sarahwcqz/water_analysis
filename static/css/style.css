@@ -1,0 +1,49 @@
+/* style.css */
+
+/* Reset et typo globale */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+#map-container {
+    width: 850px;
+}
+
+/* Card pour le menu */
+#menu {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+/* Titre du menu */
+#menu h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+/* Checkbox et labels */
+#menu label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Carte */
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

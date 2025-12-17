@@ -4,6 +4,8 @@
 <head>
     <title>Analysis of water - Map</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
     <!-- Leaflet CSS : nécessaire pour afficher la carte correctement -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
@@ -11,31 +13,18 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
 
-    <style>
-        body {
-            display: flex;
-            gap: 20px;
-            font-family: sans-serif;
-        }
-
-        #menu {
-            width: 200px;
-        }
-
-        #map {
-            height: 600px;
-            width: 800px;
-        }
-    </style>
 </head>
 
 <body>
     <div id="menu">
-        <h3>Molecules</h3>
-        <label><input type="checkbox" value="Calcium" checked> Calcium</label><br>
-        <label><input type="checkbox" value="Magnesium" checked> Magnesium</label><br>
-        <label><input type="checkbox" value="Sodium"> Sodium</label><br>
-        <button id="update">Update map</button>
+        <h3>Select the molecules you want to see</h3>
+        <label><input type="checkbox" value="Mg2+" checked> Mg2+</label><br>
+        <label><input type="checkbox" value="Ca2+" checked> Ca2+</label><br>
+        <label><input type="checkbox" value="SO42-" checked> SO42-</label><br>
+        <label><input type="checkbox" value="Cl-" checked> Cl-</label><br>
+        <label><input type="checkbox" value="F-" checked> F-</label><br>
+        <label><input type="checkbox" value="KNO3-" checked> KNO3-</label><br>
+        <label><input type="checkbox" value="K+" checked> K+</label><br>
     </div>
 
     <div id="map"></div>
@@ -46,7 +35,7 @@
     <!-- MarkerCluster JS : plugin Leaflet pour regrouper les points superposés -->
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
-    <!-- JS custom : gère le chargement des données, les filtres et l'affichage des points -->
+    <!-- chargement des données, les filtres et l'affichage des points -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
