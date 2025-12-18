@@ -39,12 +39,13 @@ This project is a simple Flask-based web application used to visualize and explo
 ## Development choices
 ### Architecture
 ```
-.
 ├── README.md
 ├── app.py
 ├── data.json
 ├── requirements.txt
 ├── static
+│   ├── css
+│   │   └── style.css
 │   └── js
 │       └── main.js
 └── templates
