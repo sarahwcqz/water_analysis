@@ -10,19 +10,26 @@
 This project is a simple Flask-based web application used to visualize and explore water analysis data.
 
 ## Set up
-1. (Optional) Create and activate a virtual environment
-<br>
-    ```python3 -m venv <your venv name>```
-    <br>
-    ```source <venv_name>/bin/activate```
+1. *(Optional)* Create and activate a virtual environment
+
+    ```bash
+    python3 -m venv <venv_name>
+    source <venv_name>/bin/activate
+    ```
+
 2. Install dependencies
-<br>
-    ```pip install -r requirements.txt```
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 3. Run the application
-<br>
-    ```python3 app.py```
-    <br>
-    The application will be available at http://127.0.0.1:5000 by default.
+
+    ```bash
+    python3 app.py
+    ```
+
+   The application will be available at http://127.0.0.1:5000 by default.
 
 ## Usage
 - Open the application in a web browser
